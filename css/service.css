@@ -1,0 +1,173 @@
+.navgation > ul:nth-child(1) li:nth-child(2) a {
+    color: #F896A9;
+}
+
+.need_help,
+.service_list,
+.special_service {
+    padding: 80px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    width: 28%;
+    margin: 0 auto 40px;
+}
+
+h2:before {
+    display: block;
+    border-bottom: 4px solid #F896A9;
+    width: 40px;
+    height: 15px;
+    content: "";
+    float: left;
+}
+
+h2:after {
+    display: block;
+    border-bottom: 4px solid #F896A9;
+    width: 40px;
+    height: 15px;
+    content: "";
+    float: right;
+}
+/*需要帮助*/
+.help_section {
+    padding: 10px;
+    width: 25%;
+    display: inline-block;
+}
+
+.help_icon {
+    text-align: center;
+}
+
+.help_section h3 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+.help_section p {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #333;
+    line-height: 2em;
+}
+
+/*服务列表*/
+.service_list {
+    background: url("../images/banner2.jpg") no-repeat fixed;
+    background-size: cover;
+}
+
+.service_list h2 {
+    width: 23%;
+    color: #F896A9;
+}
+
+.service_list h2:before {
+    border-bottom: 4px solid #fff;
+}
+
+.service_list h2:after {
+    border-bottom: 4px solid #fff;
+}
+
+.service_list p {
+    color: #fff;
+    font-family: SimSum;
+    font-size: 16px;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+.list {
+    width: 33%;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.list > ul a {
+    margin-left: 20px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 3em;
+}
+
+.list > ul span {
+    position: relative;
+    transition: all 0.2s ease-in;
+}
+
+.list > ul span:hover a {
+    color: #F896A9;
+}
+
+.list > ul span:hover {
+    margin-left: 15px;
+}
+
+.list > ul span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.2s ease-in;
+}
+
+.list > ul span:hover img {
+    transform: rotateX(360deg);
+}
+
+/*特色服务*/
+.special_service_list {
+    width: 33.3%;
+    display: inline-block;
+}
+
+.list_num {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    float: left;
+}
+
+.list_details {
+    width: 315px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.list_num p {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 13px 0;
+    transition: all .2s linear;
+}
+
+.list_num p:hover {
+    background-color: #F896A9;
+    border-radius: 5%;
+}
+
+.list_details h3 {
+    color: #F896A9;
+    font-size: 16px;
+}
+
+.list_details p {
+    font-size: 12px;
+    color: #333;
+    line-height: 2em;
+    margin-top: 15px;
+}
+
+.list_details_line2 {
+    margin-top: 20px;
+}

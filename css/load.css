@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*第一条线 */
+
+.line_box {
+    width: 100px;
+    height: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform-origin: 50% 100%;
+    /* cubic-bezier(0.175, 0.885, 0.32, 1.275)*/
+    animation: animation_name 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite;
+}
+
+@keyframes animation_name {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.line_box:nth-child(1)>.line {
+    width: 90px;
+    height: 90px;
+    border: 4px solid #333;
+    border-radius: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/*第二条线 */
+
+.line_box:nth-child(2)>.line {
+    width: 76px;
+    height: 76px;
+    border: 4px solid #333;
+    border-radius: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 7px;
+    top: 7px;
+}
+/*第3条线 */
+
+.line_box:nth-child(3)>.line {
+    width: 62px;
+    height: 62px;
+    border: 4px solid #333;
+    border-radius: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 14px;
+    top: 14px;
+}
+/*第4条线 */
+
+.line_box:nth-child(4)>.line {
+    width: 48px;
+    height: 48px;
+    border: 4px solid #333;
+    border-radius: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 21px;
+    top: 21px;
+}
+/*第5条线 */
+
+.line_box:nth-child(5)>.line {
+    width: 34px;
+    height: 34px;
+    border: 4px solid #333;
+    border-radius: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 28px;
+    top: 28px;
+}
+
+.line_box:nth-child(1) {
+    animation-delay: -0.05s;
+}
+
+.line_box:nth-child(1)>.line {
+    border-color: orange;
+}
+
+.line_box:nth-child(2) {
+    animation-delay: -0.1s;
+}
+
+.line_box:nth-child(2)>.line {
+    border-color: blue;
+}
+
+.line_box:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+.line_box:nth-child(3)>.line {
+    border-color: purple;
+}
+
+.line_box:nth-child(4) {
+    animation-delay: -0.2s;
+}
+
+.line_box:nth-child(4)>.line {
+    border-color: green;
+}
+
+.line_box:nth-child(5) {
+    animation-delay: -0.25s;
+}
+
+.line_box:nth-child(5)>.line {
+    border-color: orangered;
+}

@@ -1,0 +1,84 @@
+.navgation > ul:nth-child(1) li:nth-child(3) a {
+    color: #F896A9;
+}
+
+.blogs {
+	padding: 80px 0;
+}
+
+.blogs h2 {
+	width: 17%;
+	text-align: center;
+	margin: 0 auto 40px;
+	font-size: 30px;
+}
+
+.blogs h2:before {
+	display: block;
+    border-bottom: 4px solid #F896A9;
+    width: 40px;
+    height: 15px;
+    content: "";
+    float: left;
+}
+
+.blogs h2:after {
+	display: block;
+    border-bottom: 4px solid #F896A9;
+    width: 40px;
+    height: 15px;
+    content: "";
+    float: right;
+}
+
+.blog_small {
+	width: 32%;
+	height: 480px;
+	box-shadow: 0 0 15px #aaa;
+	display: inline-block;
+}
+
+.blog_small a img {
+	width: 100%;
+}
+
+.txt {
+	height: 184px;
+	padding: 10px;
+}
+
+.txt h4 {
+	font-size: 16px;
+	line-height: 2em;
+	color: #F896A9;
+}
+
+.txt p {
+	font-size: 12px;
+    padding: 5px; 
+    line-height: 1.3em;
+    color: #464646;
+}
+
+.more {
+	width: 105px;
+	text-align: center;
+	padding: 10px 20px;
+	background-color: #F896A9;
+	display: block;
+	margin: 10px 0 0 15px;
+}
+
+.count {
+	margin-top: 40px;
+}
+
+.count > p {
+	text-align: center;
+}
+
+.count > p a {
+	border: 1px solid #333;
+	color: #333;
+	padding: 3px 5px;
+}

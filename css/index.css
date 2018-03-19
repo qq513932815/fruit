@@ -1,0 +1,428 @@
+body{
+    min-width: 1440px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    font-family: SimHei;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.banner {
+    display: none;
+}
+
+/*轮播图*/
+
+.carousel{
+    width: 100%;
+    height: 730px;
+    background: url("../images/banner1.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.car_txt {
+    width: 640px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 50%;
+    position: relative;
+}
+
+.text1 {
+    display: block;
+}
+
+.text2,.text3 {
+    display: none;
+}
+
+.car_txt > h3 {
+    font-size: 70px;
+    color: #F896A9;
+}
+
+.car_txt > h4 {
+    font-size: 26px;
+    margin: 25px 0;
+    color: #fff;
+}
+
+.car_txt > p {
+    width: 635px;
+    height: 252px;
+    line-height: 2em;
+    font-size: 14px;
+    margin-bottom: 30px;
+    text-indent: 2em;
+}
+
+.more {
+    display: inline-block;
+    background-color: #f896a9;
+    width: 100px;
+    height: 38px;
+    font-size: 16px;
+    position: absolute;
+    bottom: -60px;
+    line-height: 38px;
+    text-align: center;
+    color: #333;
+    z-index: 0;
+    transition: color 0.3s linear;
+}
+
+.more:hover {
+    color: #fff;
+}
+
+.more::before {
+    content: "";
+    width: 100px;
+    height: 38px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background: #333;
+    transform: scale(0);
+    transition: all 0.3s linear;
+}
+
+.more:hover::before {
+    transform: scale(1);
+}
+
+.car_link {
+    width: 300px;
+    display: block;
+    margin-left: 570px;
+    margin-top: 80px;
+}
+
+.car_link > li {
+    width: 90px;
+    display: inline-block;
+}
+
+.car_link > li > a {
+    display: block;
+    width: 80px;
+    height: 8px;
+    background-color: #fff;
+}
+
+/*欢迎光临*/
+
+.carouse2 {
+    padding: 80px 0;
+}
+
+.carouse2 > .container > h3 {
+    text-align: center;
+    font-size: 30px;
+    width: 20%;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+
+.carouse2 > .container > h3::before {
+    display: block;
+    border-bottom: 4px solid #F896A9;
+    width: 40px;
+    height: 15px;
+    content: "";
+    float: left;
+}
+
+.carouse2 > .container > h3::after {
+    display: block;
+    border-bottom: 4px solid #F896A9;
+    width: 40px;
+    height: 15px;
+    content: "";
+    float: right;
+}
+
+.wel_img {
+    width: 67%;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.wel_img > a > img {
+    transition: all 1.1s;
+}
+
+.wel_img > a > img:hover{
+    transform: rotate(5deg) scale(1.2);
+}
+
+.carouse2 > .container > h4 {
+    margin-top: 32px;
+    color: #F896A9;
+    text-align: center;
+}
+
+.carouse2 > .container > p {
+    font-size: 14px;
+    margin-top: 23px;
+    line-height: 2em;
+    color: #464646;
+    text-align: center;
+}
+
+/*特色饮品*/
+
+.carouse3 {
+    background-color: #F896A9;
+    padding: 80px 0;
+}
+
+.carouse3 > .container > h3 {
+    width: 20%;
+    color: #fff;
+    font-size: 30px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.carouse3 > .container > h3::before {
+    display: block;
+    border-bottom: 4px solid #fff;
+    width: 40px;
+    height: 15px;
+    content: "";
+    float: left;
+}
+
+.carouse3 > .container > h3::after {
+    display: block;
+    border-bottom: 4px solid #fff;
+    width: 40px;
+    height: 15px;
+    content: "";
+    float: right;
+}
+
+.big_box {
+    background-color: #fff;
+    width: 100%;
+    height: 492px;
+}
+
+.small_box {
+    width: 50%;
+    float: left;
+    height: 246px;
+}
+
+.bgimg {
+    overflow: hidden;
+}
+
+.bgimg > img {
+    width: 100%;
+    min-height: 246px;
+}
+
+.text {
+    padding: 40px 35px 0 35px;
+}
+
+.text > p {
+    text-indent: 2em;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 2em;
+    color: #464646;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.sb3 > h4 {
+    text-align: right;
+}
+
+/*动画*/
+
+.box {
+    overflow: hidden;
+    position: relative;
+    transition: opacity 0.3s linear;
+}
+
+.box:hover {
+    opacity: .6;
+}
+
+.small_box  figcaption {
+    font-family: SimHei;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left: 35px;
+    top: 24px;
+}
+
+figcaption::before,
+figcaption::after {
+    content: "";
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+figcaption::before {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    transform: scale(0,1);
+    transition: all 0.3s linear;
+}
+
+figcaption:hover::before {
+    transform: scale(1,1);
+}
+
+figcaption::after {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: scale(1,0);
+    transition: all 0.3s linear;
+}
+
+figcaption:hover::after {
+    transform: scale(1,1);
+}
+
+figcaption > h4,
+figcaption > p {
+    color: #fff;
+    font-size: 20px;
+    opacity: 0;
+}
+
+figcaption > h4 {
+    transform: translate3d(0,-10px,0);
+    transition: all 0.2s linear;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    opacity: 0;
+}
+
+figcaption > p {
+    transform: translate3d(0,20px,0);
+    transition: all 0.2s linear;
+    opacity: 0;
+}
+
+figcaption:hover > h4 {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
+
+figcaption:hover > p {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
+
+/*特色活动*/
+
+.carouse4 {
+    padding: 80px 0;
+}
+
+.carouse4 > .container > h3 {
+    width: 20%;
+    font-size: 30px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.carouse4 > .container > h3::before {
+    display: block;
+    border-bottom: 4px solid #F896A9;
+    width: 40px;
+    height: 15px;
+    content: "";
+    float: left;
+}
+
+.carouse4 > .container > h3::after {
+    display: block;
+    border-bottom: 4px solid #F896A9;
+    width: 40px;
+    height: 15px;
+    content: "";
+    float: right;
+}
+
+.active_left,.active_right{
+    width: 50%;
+}
+
+.active,
+.actives {
+    display: flex;
+}
+
+.actives_apple {
+    width: 25%;
+    position: relative;
+}
+
+.actives_time {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}
+
+.actives_time > p {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.actives_txt {
+    width: 75%;
+}
+
+.actives_txt > h4 {
+    color: #F896A9;
+}
+
+.actives_txt > p {
+    text-indent: 2em;
+    margin-top: 13px;
+    font-size: 14px;
+    line-height: 2em;
+    color: #464646;
+}
+
+.actives_mid {
+    margin: 30px 0;
+}
+
+.active_right {
+    text-align: center;
+}

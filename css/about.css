@@ -1,0 +1,229 @@
+.navgation > ul:nth-child(1) li:nth-child(1) a {
+	color: #F896A9;
+}
+
+.aboutus,.ourteam,.ourskill {
+	padding: 80px 0;
+}
+
+
+/*关于我们*/
+.aboutus h2 {
+	width: 20%;
+	text-align: center;
+	margin: 0 auto 40px;
+	font-size: 30px;
+}
+
+.aboutus h2:before {
+	display: block;
+    border-bottom: 4px solid #F896A9;
+    width: 40px;
+    height: 15px;
+    content: "";
+    float: left;
+}
+
+.aboutus h2:after {
+	display: block;
+    border-bottom: 4px solid #F896A9;
+    width: 40px;
+    height: 15px;
+    content: "";
+    float: right;
+}
+
+.left_img {
+	width: 39%;
+	display: inline-block;
+}
+
+.right_txt {
+	height: 100%;
+	width: 60%;
+	display: inline-block;
+}
+
+.right_txt > h2, .right_txt > h4, .right_txt p {
+	line-height: 2em;
+	margin-bottom: 20px;
+}
+
+.right_txt > h4 {
+	color: #F896A9;
+}
+
+.right_txt p:last-child {
+	margin-bottom: 40px;
+}
+
+.right_txt p {
+	font-size: 14px;
+    line-height: 2em;
+    color: #464646;
+}
+
+
+/*我们的团队*/
+.ourteam {
+	background-color: #F896A9;
+}
+
+.ourteam h2 {
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+	width: 25%;
+	margin: 0 auto 40px;
+}
+
+
+.ourteam h2:before {
+	display: block;
+    border-bottom: 4px solid #fff;
+    width: 40px;
+    height: 15px;
+    content: "";
+    float: left;
+}
+
+.ourteam h2:after {
+	display: block;
+    border-bottom: 4px solid #fff;
+    width: 40px;
+    height: 15px;
+    content: "";
+    float: right;
+}
+
+.all_team {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.all_team > div {
+	width: 265px;
+	height: 265px;
+	background-color: #fff;
+	border: 5px solid #fff;
+	position: relative;
+}
+
+.mark {
+	width: 100%;
+	height: 100%;
+	border: 30px solid rgba(51, 51, 51, .4);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .4s cubic-bezier(0.940, 0.850, 0.100, 0.620);
+}
+
+.mark:hover {
+	border: 0px double rgba(51, 51, 51, .4);
+}
+
+
+/*我们的技能*/
+.ourskill h3 {
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
+.kill_smallbox {
+	height: 145px;
+	margin-bottom: 25px;
+}
+
+.skill_left {
+	width: 49%;
+	display: inline-block;
+}
+
+.left_botton {
+	width: 54px;
+	height: 54px;
+	background-color: #F896A9;
+	padding: 13px 0;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+	display: inline-block;
+	float: left;
+	transition: all .5s linear;
+}
+
+.left_botton:hover {
+	background-color: #333;
+	border-radius: 5%;
+}
+
+.left_txt {
+	margin-left: 20px;
+	width: 85%;
+	display: inline-block;
+	float: right;
+}
+
+.left_txt a {
+	color: #F896A9;
+	font-size: 19px;
+	display: inline-block;
+}
+
+.left_txt p,.skill_right_top p {
+	margin-top: 8px;
+	color: #464646;
+    font-size: 14px;
+    line-height: 2em;
+}
+
+.skill_right {
+	width: 49%;
+	display: inline-block;
+	margin-left: 1%;
+	float: right;
+}
+
+.skill_right_top a {
+	color: #F896A9;
+	font-size: 19px;
+	display: inline-block;
+}
+
+.skill_right_bt {
+	margin-top: 25px;
+}
+
+.skill_right_bt > ul a {
+	margin-left: 20px;
+	font-size: 14px;
+	color: #464646;
+	line-height: 2em;
+}
+
+.skill_right_bt > ul span {
+	position: relative;
+	transition: all 0.2s ease-in;
+}
+
+.skill_right_bt > ul span:hover a {
+	color: #F896A9;
+}
+
+.skill_right_bt > ul span:hover {
+	margin-left: 15px;
+}
+
+.skill_right_bt > ul span img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all 0.2s ease-in;
+}
+
+.skill_right_bt > ul span:hover img {
+	transform: rotateX(360deg);
+}
